@@ -2,7 +2,7 @@
 
 let arr = ["This", "is", "an", "array"];
 
-const delArr = () => {;
+const delArr = () => {
     console.log(`Before deletion: ${arr}`);
     console.log(`Array Size: ${arr.length}`);
     console.log(`-----------------------`);
