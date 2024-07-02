@@ -37,3 +37,16 @@ const ex_4_arr = arr.concat(arrayLike);
 console.group("Ex 4: Concat array with object");
 console.log(ex_4_arr);
 console.groupEnd();
+
+// Ex: 5 - concat - array with object - make object isConcatSpreadable ---------
+let arrayLike_2 = {
+    0: "something",
+    1: "else",
+    [Symbol.isConcatSpreadable]: true,
+    length: 2
+};
+
+const ex_5_arr = arr.concat(arrayLike_2);
+console.group("Ex 5: Concat array with object isConcatSpreadable");
+console.log(ex_5_arr);
+console.groupEnd();
