@@ -25,3 +25,15 @@ const ex_3_arr = arr.concat([3, 4], 5, 6);
 console.group("Ex 3: Concat with array and 2 single values");
 console.log(ex_3_arr);
 console.groupEnd();
+
+// Ex: 4 - concat - array with an object ---------------------------------------
+// The whole object is copied as the 3rd element here.
+let arrayLike = {
+    0: "something",
+    length: 1
+};
+
+const ex_4_arr = arr.concat(arrayLike);
+console.group("Ex 4: Concat array with object");
+console.log(ex_4_arr);
+console.groupEnd();
