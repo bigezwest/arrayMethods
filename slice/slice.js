@@ -16,6 +16,12 @@ console.group("Ex 1 - Array Slice");
 console.log(arrSlice(1, 3));
 console.groupEnd();
 
+// Ex: 2 - Negative index ---------------------------------------
+console.group("Ex: 2 - Using Negative Index");
+console.log(arrSlice(-2));
+console.groupEnd();
+
+
 // Original array --------------------------------
 console.group("Original Array");
 console.log(arr);
