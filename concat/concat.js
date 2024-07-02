@@ -7,9 +7,9 @@ console.group("Original Array");
 console.log(arr);
 console.groupEnd();
 
-// concat() - with another array -----------------
-const arr_2 = arr.concat([3, 4]);
+// Ex: 1 - concat() - with another array ---------
+const ex_1_arr = arr.concat([3, 4]);
 
-console.group("Concat 2 arrays");
-console.log(arr_2);
+console.group("Ex 1: Concat 2 arrays");
+console.log(ex_1_arr);
 console.groupEnd();
