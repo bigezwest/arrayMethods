@@ -41,3 +41,17 @@ const insert = () => {
     console.groupEnd();
 }
 insert();
+
+// Ex: 3 - splice() - Negative index use
+let arr_ex_4 = [ 1, 2, 5 ];
+
+const insertAtNegIndex = () => {
+    console.group("insertAtNegIndex()");
+
+    console.log("Original Array: " + arr_ex_4);
+    arr_ex_4.splice(-1, 0, 3, 4);
+    console.log("Modified Array: " + arr_ex_4);
+
+    console.groupEnd;
+}
+insertAtNegIndex();
