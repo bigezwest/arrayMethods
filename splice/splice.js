@@ -18,7 +18,7 @@ removeElement();
 let arr_ex_2 = ["I", "study", "JavaScript", "right", "now"];
 
 const removeReplace = () => {
-    console.group("removeReplace");
+    console.group("removeReplace()");
 
     console.log("Original Array: " + arr_ex_2);
     arr_ex_2.splice(0, 3, "Let's", "dance");
@@ -27,3 +27,17 @@ const removeReplace = () => {
     console.groupEnd();
 }
 removeReplace();
+
+// Ex: 3 - splice() - Insert with no removals ----------------------------------
+let arr_ex_3 = [ "I", "study", "JavaScript" ];
+
+const insert = () => {
+    console.group("insert()");
+
+    console.log("Original Array: " + arr_ex_3);
+    arr_ex_3.splice(2, 0, "complex", "language" );
+    console.log("Modified Array: " + arr_ex_3);
+
+    console.groupEnd();
+}
+insert();
