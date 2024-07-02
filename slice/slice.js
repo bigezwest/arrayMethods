@@ -21,6 +21,12 @@ console.group("Ex: 2 - Using Negative Index");
 console.log(arrSlice(-2));
 console.groupEnd();
 
+// Ex: 3 - Make a copy ------------------------------------------
+console.group("Ex: 3 - Make a copy");
+let arrCopy = arrSlice();
+console.log(arrCopy);
+console.groupEnd();
+
 
 // Original array --------------------------------
 console.group("Original Array");
