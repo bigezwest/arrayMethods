@@ -15,3 +15,15 @@ console.log("Unsorted: " + num_arr);
 num_arr.sort();
 console.log("Sorted: " + num_arr);
 console.groupEnd();
+
+// Ex: 3 - sort numbers - using a custom function
+
+function compareNums(a, b) {
+    if (a > b) return 1;
+    if (a == b) return 0;
+    if (a < b) return -1;
+}
+console.group("Sort using compare function");
+console.log("Original Array: " + num_arr);
+console.log("Sorted Array: " + num_arr.sort(compareNums));
+console.groupEnd();
