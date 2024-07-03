@@ -17,7 +17,6 @@ console.log("Sorted: " + num_arr);
 console.groupEnd();
 
 // Ex: 3 - sort numbers - using a custom function
-
 function compareNums(a, b) {
     if (a > b) return 1;
     if (a == b) return 0;
@@ -26,4 +25,12 @@ function compareNums(a, b) {
 console.group("Sort using compare function");
 console.log("Original Array: " + num_arr);
 console.log("Sorted Array: " + num_arr.sort(compareNums));
+console.groupEnd();
+
+// Ex: 4 - Show each step of a sort
+console.group("Show complete sort");
+[1, -2, 15, 2, 0, 8].sort(function(a, b) {
+    console.log( a + " <> " + b );
+    return a - b;
+});
 console.groupEnd();
