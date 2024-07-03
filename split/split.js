@@ -8,6 +8,7 @@ for (let name of names) {
     console.log(`A message to ${name}`);
 }
 console.groupEnd();
+
 // Ex: 2 - split - delim and limit parameters ----------------------------------
 console.group("Ex: 2");
 const text_2 = "Tom, Dick, Harry";
@@ -15,4 +16,11 @@ let names_2 = text_2.split(", ", 2);
 for (let name of names_2) {
     console.log(`A message to ${name}`);
 }
+console.groupEnd();
+
+// Ex: 3 - split - empty delimiter ---------------------------------------------
+console.group("Ex: 3");
+const text_3 = "Hello World";
+let splitText = text_3.split('');
+console.log(splitText);
 console.groupEnd();
