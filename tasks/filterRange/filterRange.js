@@ -3,16 +3,10 @@ const arr = [ 5, 3, 8, 1 ];
 const min = 1;
 const max = 4;
 
-filterRange(arr, min, max);
+let filtered = filterRange(arr, min, max);
+console.log("Filtered: " + filtered);
+console.log("Unfiltered: " + arr);
 
 function filterRange(arr, a, b) {
-    let newArr = [];
-    for (let item of arr) {
-        if (item >= a && item <= b) {
-            newArr.push(item);
-        }
-    }
-
-    console.log("New Array: " + newArr);
-    console.log("Original Array: " + arr);
+    return arr.filter(item => (item >= min && item <= max));
 }
