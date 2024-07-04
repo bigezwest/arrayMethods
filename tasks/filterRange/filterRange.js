@@ -7,11 +7,12 @@ filterRange(arr, min, max);
 
 function filterRange(arr, a, b) {
     let newArr = [];
-    for (let item in arr) {
-        if (arr[item] >= a && arr[item] <= b) {
-            newArr.push(arr[item]);
+    for (let item of arr) {
+        if (item >= a && item <= b) {
+            newArr.push(item);
         }
     }
+
     console.log("New Array: " + newArr);
     console.log("Original Array: " + arr);
 }
